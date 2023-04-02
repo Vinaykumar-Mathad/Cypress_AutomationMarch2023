@@ -1,0 +1,46 @@
+{
+  "name": "cypressautomationmarch2023",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/cypress run",
+    "headTestDefaultElectron": "npm run test -- --headed",
+    "headTestBrowserChrome": "npm run test -- --headed --browser chrome",
+    "Test1RunBrowserChrome": "npm run test -- --spec cypress/integration/examples/Test1.js --headed --browser chrome",
+    "Test2RunBrowserFirefox": "npm run test -- --spec cypress/integration/examples/Test2.js --headed --browser firefox",
+    "Test3RunBrowserEdge": "npm run test -- --spec cypress/integration/examples/Test3.js --headed --browser edge",
+    "Test4RunBrowserFirefox": "npm run test -- --spec cypress/integration/examples/Test4.js --headed --browser firefox",
+    "Test5RunBrowserChrome": "npm run test -- --spec cypress/integration/examples/Test5.js --headed --browser chrome",
+    "Test6RunBrowserFirefox": "npm run test -- --spec cypress/integration/examples/Test6.js --headed --browser firefox",
+    "Test7RunBrowserEdge": "npm run test -- --spec cypress/integration/examples/Test7.js --headed --browser edge",
+    "Test8RunBrowserFirefox": "npm run test -- --spec cypress/integration/examples/Test8.js --headed --browser firefox",
+    "Test9RunBrowserChrome": "npm run test -- --spec cypress/integration/examples/Test9.js --headed --browser chrome",
+    "Test10RunBrowserFirefox": "npm run test -- --spec cypress/integration/examples/Test10.js --headed --browser firefox",
+    "Test11RunBrowserEdge": "npm run test -- --spec cypress/integration/examples/Test11.js --headed --browser edge",
+    "Test12RunBrowserFirefox": "npm run test -- --spec cypress/integration/examples/Test12.js --headed --browser firefox",
+    "TestPOM1RunBrowserChrome": "npm run test -- --spec cypress/integration/examples/TestPOM1.js --headed --browser chrome",
+    "TestPOM2RunBrowserEdge": "npm run test -- --spec cypress/integration/examples/TestPOM2.js --headed --browser edge",
+    "TestCypressDashboardRun": "npm run test -- --record --key 047883b1-f1c5-431b-9eda-7347eb164ce1",
+    "TestCypressDashboardHeaded": "npm run test --record --key 047883b1-f1c5-431b-9eda-7347eb164ce1 --spec cypress/integration/examples/*.js --headed",
+    "TestCypressDHBrowserChrome": "npm run test --record --key 047883b1-f1c5-431b-9eda-7347eb164ce1 --spec cypress/integration/examples/*.js --headed --browser chrome",
+    "TestPOM1CypressDHBrowserChrome": "npm run test --record --key 047883b1-f1c5-431b-9eda-7347eb164ce1 --spec cypress/integration/examples/TestPOM1.js --headed --browser chrome"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/integration/examples/BDD/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.9.0",
+    "cypress-iframe": "^1.0.1"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^16.0.1",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cucumber": "^6.0.7",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "install": "^0.13.0"
+  }
+}
