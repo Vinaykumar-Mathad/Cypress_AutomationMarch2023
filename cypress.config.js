@@ -22,9 +22,14 @@ module.exports = defineConfig({
   retries: {
     runMode: 1
     },
-  e2e: {
-    setupNodeEvents,
+    e2e: {
+      setupNodeEvents,
+      specPattern: 'cypress/integration/examples/BDD/*.feature'
+    },
+  
+  //  e2e: {
+  //  setupNodeEvents,
     //specPattern: '**/*.feature'
-    specPattern: ["cypress/integration/**/*.{js,jsx,ts,tsx,feature}"], //
-  },
+  // specPattern: ["cypress/integration/**/*.{js,jsx,ts,tsx,feature}"], 
+  //},
 });
